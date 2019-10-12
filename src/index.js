@@ -1,5 +1,13 @@
 require('./../dist/css/mystyles.scss');
-import { homeBanner, tabContainer } from './home';
+import Banner from './components/home-banner';
+import infoContainer from './components/home-container';
 
-let banner = homeBanner();
-let tabBox = tabContainer();
+const displayHome = () => {
+  let display = document.getElementById('main');
+  display.appendChild('banner');
+  display.appendChild('table-container');
+  let header = new Banner();
+  let tabBox = new infoContainer();
+};
+
+displayHome();
