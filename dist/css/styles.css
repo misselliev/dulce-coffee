@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+html {
+  background-color: rgba(217, 241, 188, 1.0)!important;
+}
+
+.header-text {
+  font-weight: bold;
+  text-shadow: 2px 2px 3px grey;
+  font-family: 'Courgette', cursive;
+}
+
+.header-bg {
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) !important;
+}
+
+.italic-text {
+  font-style: italic;
+}
