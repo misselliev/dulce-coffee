@@ -3,3 +3,4 @@ linters:
     config: './eslint.config'
 files:
   ignore:
+    - 'dist/*'
