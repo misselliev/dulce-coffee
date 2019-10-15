@@ -13,8 +13,7 @@ export default class findTab {
     imageCont.classList = 'flex-container';
     const picture = document.createElement('img');
     picture.classList = 'image is-squared extra-space';
-    picture.src =
-      'https://images.unsplash.com/photo-1469631423273-6995642a6a40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=778&q=80';
+    picture.src = 'https://i.imgur.com/qu5Pbk1.jpg';
     imageCont.appendChild(picture);
     tab.appendChild(imageCont);
     const divInfo = document.createElement('div');
