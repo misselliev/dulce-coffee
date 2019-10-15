@@ -7,7 +7,7 @@ export default class findTab {
     let tab = document.createElement('div');
     page.append(tab);
     tab.classList = 'container';
-    tab.id = 'find-tab';
+    tab.id = 'find-us-tab';
     let imageCont = document.createElement('div');
     imageCont.classList = 'flex-container';
     let picture = document.createElement('img');
