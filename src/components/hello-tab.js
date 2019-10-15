@@ -2,6 +2,7 @@ export default class helloTab {
   constructor() {
     this.helloInfo();
   }
+
   helloInfo() {
     const page = document.getElementById('main');
     const tab = document.createElement('div');
