@@ -1,16 +1,21 @@
 export default class menuTab {
-  constructor() {
-    this.menuInfo();
-  }
-  menuInfo() {
+  // constructor() {
+  //   // this.menuInfo();
+  // }
+  // menuInfo() {
+  //   let page = document.getElementById('main');
+  //   let tab = document.createElement('div');
+  //   page.append(tab);
+  //   tab.classList = 'container';
+  //   tab.id = 'menu-tab';
+  // }
+  newCategory(name, description) {
     let page = document.getElementById('main');
     let tab = document.createElement('div');
     page.append(tab);
     tab.classList = 'container';
-    tab.id = 'menu-tab';
-  }
-  newCategory(name, description) {
-    let tab = document.getElementById('menu-tab');
+    // tab.id = 'menu-tab';
+    // let tab = document.getElementById('menu-tab');
     let category = document.createElement('div');
     category.id = name;
     category.classList = 'columns';
@@ -102,4 +107,10 @@ export const displaySaladMenu = () => {
     'Avocado heaven',
     'https://images.unsplash.com/photo-1564929360162-73cd686db4a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80'
   );
+};
+
+export const displayAll = () => {
+  displayCoffeeMenu();
+  displayPastryMenu();
+  displaySaladMenu();
 };
