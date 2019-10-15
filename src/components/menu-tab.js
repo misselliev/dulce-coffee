@@ -1,31 +1,32 @@
 class menuTab {
   newCategory(name, description) {
-    let page = document.getElementById('menu-tab');
-    let tab = document.createElement('div');
+    const page = document.getElementById('menu-tab');
+    const tab = document.createElement('div');
     page.append(tab);
     tab.classList = 'menu-break';
-    let category = document.createElement('div');
+    const category = document.createElement('div');
     category.id = name;
     category.classList = 'columns';
-    let title = document.createElement('h1');
+    const title = document.createElement('h1');
     title.classList = 'title is-3 is-spaced green-text';
     title.innerHTML = name;
-    let sub = document.createElement('h2');
+    const sub = document.createElement('h2');
     sub.classList = 'title is-5 is-spaced italic-text green-text';
     sub.innerHTML = description;
     tab.append(title);
     tab.append(sub);
     tab.append(category);
   }
+
   newItem(category, dish, photo) {
-    let cat = document.getElementById(category);
-    let itemDiv = document.createElement('div');
+    const cat = document.getElementById(category);
+    const itemDiv = document.createElement('div');
     itemDiv.classList = 'column';
-    let image = document.createElement('img');
+    const image = document.createElement('img');
     image.classList = 'image is-rounded is-128x128';
     image.src = photo;
     itemDiv.append(image);
-    let sub = document.createElement('h2');
+    const sub = document.createElement('h2');
     sub.classList = 'subtitle is-5 green-text';
     sub.innerHTML = dish;
     itemDiv.appendChild(sub);
@@ -33,10 +34,10 @@ class menuTab {
   }
 }
 
-//Addding categories and items
+//  Addding categories and items
 
 export const displayCoffeeMenu = () => {
-  let menu = new menuTab();
+  const menu = new menuTab();
   menu.newCategory('Coffee', 'Get your caffeine fix in style');
   menu.newItem(
     'Coffee',
@@ -56,7 +57,7 @@ export const displayCoffeeMenu = () => {
 };
 
 export const displayPastryMenu = () => {
-  let menu = new menuTab();
+  const menu = new menuTab();
 
   menu.newCategory('Pastries', 'Something sweet to nibble to');
   menu.newItem(
@@ -77,7 +78,7 @@ export const displayPastryMenu = () => {
 };
 
 export const displaySaladMenu = () => {
-  let menu = new menuTab();
+  const menu = new menuTab();
 
   menu.newCategory('Salads', 'Because your human also has to get something');
   menu.newItem(
@@ -98,8 +99,8 @@ export const displaySaladMenu = () => {
 };
 
 export const displayAll = () => {
-  let page = document.getElementById('main');
-  let tab = document.createElement('div');
+  const page = document.getElementById('main');
+  const tab = document.createElement('div');
   page.append(tab);
   tab.classList = 'container';
   tab.id = 'menu-tab';
