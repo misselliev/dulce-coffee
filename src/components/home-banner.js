@@ -4,7 +4,7 @@ export default class Banner {
   }
   homeBanner() {
     let bannerMainContainer = document.createElement('section');
-    bannerMainContainer.classList = 'hero is-primary is-bold';
+    bannerMainContainer.classList = 'hero is-primary is-bold header-bg';
     let bannerBody = document.createElement('div');
     bannerBody.classList = 'hero-body';
     bannerMainContainer.appendChild(bannerBody);
@@ -13,14 +13,14 @@ export default class Banner {
     bannerBody.appendChild(bannerCont);
 
     let title = document.createElement('h1');
-    title.classList = 'title';
+    title.classList = 'title is-spaced header-text';
     title.innerHTML = 'The Green Woof';
     bannerCont.appendChild(title);
 
     let subtitle = document.createElement('h2');
     subtitle.innerHTML =
       'When your human wants to be vegan but you want a puppachino';
-    title.classList = 'subtitle';
+    subtitle.classList = 'subtitle header-text';
     bannerCont.appendChild(subtitle);
 
     let display = document.getElementById('main');
