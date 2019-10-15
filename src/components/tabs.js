@@ -1,14 +1,6 @@
-import helloTab from './hello-tab';
 import displayWelcome from './hello-tab';
-import {
-  displayCoffeeMenu,
-  displayPastryMenu,
-  displaySaladMenu,
-  displayAll
-} from './menu-tab';
+import { displayAll } from './menu-tab';
 import displayFind from './find-tab';
-import menuTab from './menu-tab';
-import findTab from './find-tab';
 export default class tabsContainer {
   tabs() {
     let totalTabs = [
@@ -56,20 +48,31 @@ export default class tabsContainer {
     //     }
     //   });
     // });
+    function cleanScreen() {
+      let body = document.body;
+      let cont = document.getElementsByClassName('container')[0];
+      if (cont) {
+        body.removeChild(cont);
+      }
+    }
+
     let tab1 = document.getElementById('hello');
     tab1.addEventListener('click', () => {
-      let a = new helloTab();
-      displayWelcome();
+      cleanScreen();
+      // let a = new helloTab();
+      new displayWelcome();
     });
     let tab2 = document.getElementById('menu');
     tab2.addEventListener('click', () => {
-      let b = new menuTab();
+      cleanScreen();
+      // let b = new menuTab();
       displayAll();
     });
     let tab3 = document.getElementById('map');
     tab3.addEventListener('click', () => {
-      let c = new findTab();
-      displayFind();
+      cleanScreen();
+      // let c = new findTab();
+      new displayFind();
     });
     display.appendChild(cont);
   }

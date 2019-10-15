@@ -1,21 +1,9 @@
-export default class menuTab {
-  // constructor() {
-  //   // this.menuInfo();
-  // }
-  // menuInfo() {
-  //   let page = document.getElementById('main');
-  //   let tab = document.createElement('div');
-  //   page.append(tab);
-  //   tab.classList = 'container';
-  //   tab.id = 'menu-tab';
-  // }
+class menuTab {
   newCategory(name, description) {
-    let page = document.getElementById('main');
+    let page = document.getElementById('menu-tab');
     let tab = document.createElement('div');
     page.append(tab);
-    tab.classList = 'container';
-    // tab.id = 'menu-tab';
-    // let tab = document.getElementById('menu-tab');
+    tab.classList = 'temp';
     let category = document.createElement('div');
     category.id = name;
     category.classList = 'columns';
@@ -110,6 +98,11 @@ export const displaySaladMenu = () => {
 };
 
 export const displayAll = () => {
+  let page = document.getElementById('main');
+  let tab = document.createElement('div');
+  page.append(tab);
+  tab.classList = 'container';
+  tab.id = 'menu-tab';
   displayCoffeeMenu();
   displayPastryMenu();
   displaySaladMenu();

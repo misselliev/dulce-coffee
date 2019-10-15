@@ -9,7 +9,6 @@ export default class Banner {
     bannerBody.classList = 'hero-body';
     bannerMainContainer.appendChild(bannerBody);
     let bannerCont = document.createElement('div');
-    bannerCont.classList = 'container';
     bannerBody.appendChild(bannerCont);
 
     let title = document.createElement('h1');

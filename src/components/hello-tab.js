@@ -40,5 +40,5 @@ export default class helloTab {
 
 export const displayWelcome = () => {
   let welcome = new helloTab();
-  welcome;
+  return welcome;
 };
