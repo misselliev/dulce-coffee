@@ -19,3 +19,8 @@ export default class findTab {
     tab.appendChild(info);
   }
 }
+
+export const displayFind = () => {
+  let find = new findTab();
+  find;
+};
