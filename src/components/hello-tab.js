@@ -32,8 +32,13 @@ export default class helloTab {
     let pup = document.createElement('img');
     pup.classList = 'is-rounded';
     pup.style = 'height:300px; width:300px;';
-    pup.src = 'https://i.redd.it/hkbgrkwbfrb11.jpg';
+    pup.src = 'https://i.imgur.com/9uKrhtz.png';
     helloPup.appendChild(pup);
     helloColumns.appendChild(helloPup);
   }
 }
+
+export const displayWelcome = () => {
+  let welcome = new helloTab();
+  welcome;
+};
