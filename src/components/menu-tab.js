@@ -3,15 +3,15 @@ class menuTab {
     let page = document.getElementById('menu-tab');
     let tab = document.createElement('div');
     page.append(tab);
-    tab.classList = 'temp';
+    tab.classList = 'menu-break';
     let category = document.createElement('div');
     category.id = name;
     category.classList = 'columns';
     let title = document.createElement('h1');
-    title.classList = 'title is-3 is-spaced';
+    title.classList = 'title is-3 is-spaced green-text';
     title.innerHTML = name;
     let sub = document.createElement('h2');
-    sub.classList = 'title is-5 is-spaced italic-text';
+    sub.classList = 'title is-5 is-spaced italic-text green-text';
     sub.innerHTML = description;
     tab.append(title);
     tab.append(sub);
@@ -26,7 +26,7 @@ class menuTab {
     image.src = photo;
     itemDiv.append(image);
     let sub = document.createElement('h2');
-    sub.classList = 'subtitle is-5';
+    sub.classList = 'subtitle is-5 green-text';
     sub.innerHTML = dish;
     itemDiv.appendChild(sub);
     cat.append(itemDiv);

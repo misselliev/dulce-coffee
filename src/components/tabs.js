@@ -17,6 +17,7 @@ export default class tabsContainer {
       tbElement.id = item[2];
       tabList.appendChild(tbElement);
       let tabAnchor = document.createElement('a');
+      tabAnchor.classList = 'green-text';
       tbElement.appendChild(tabAnchor);
       let tabSpanIcon = document.createElement('span');
       tabSpanIcon.classList = 'icon is-small';
@@ -27,27 +28,8 @@ export default class tabsContainer {
       tabSpanIcon.appendChild(tabIcon);
       tabAnchor.appendChild(tabSpanIcon);
       tabAnchor.appendChild(tabText);
-      // item.addEventListener('click', () => {
-      //   if (item.id === 'hello') {
-      //     displayWelcome();
-      //   } else if (item.id === 'menu') {
-      //     displayAll();
-      //   } else {
-      //     displayFind();
-      //   }
-      // });
     });
-    // totalTabs.forEach(item => {
-    //   item.addEventListener('click', () => {
-    //     if (item.id === 'hello') {
-    //       displayWelcome();
-    //     } else if (item.id === 'menu') {
-    //       displayAll();
-    //     } else {
-    //       displayFind();
-    //     }
-    //   });
-    // });
+
     function cleanScreen() {
       let body = document.body;
       let cont = document.getElementsByClassName('container')[0];
@@ -59,19 +41,16 @@ export default class tabsContainer {
     let tab1 = document.getElementById('hello');
     tab1.addEventListener('click', () => {
       cleanScreen();
-      // let a = new helloTab();
       new displayWelcome();
     });
     let tab2 = document.getElementById('menu');
     tab2.addEventListener('click', () => {
       cleanScreen();
-      // let b = new menuTab();
       displayAll();
     });
     let tab3 = document.getElementById('map');
     tab3.addEventListener('click', () => {
       cleanScreen();
-      // let c = new findTab();
       new displayFind();
     });
     display.appendChild(cont);

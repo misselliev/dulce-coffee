@@ -4,7 +4,7 @@ html {
 
 .header-text {
   font-weight: bold;
-  text-shadow: 2px 2px 3px grey;
+  text-shadow: 2px 2px 4px grey;
   font-family: 'Courgette', cursive;
 }
 
@@ -16,13 +16,29 @@ html {
   font-style: italic;
 }
 
+.green-text {
+  color: rgba(49, 150, 34, 1.0) !important;
+}
+
+.extra-space {
+  margin-bottom: 3em;
+}
+
+.img-column {
+  margin-right: 8em;
+}
+
+.pup {
+  height: 30em;
+  width: 30em;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.flex-item {
-  text-align: center;
-  display: inline-block;
+.menu-break {
+  margin: 1em 5em 3em 9em;
 }
